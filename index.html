@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Plebber</title>
 </head>
 <body>
@@ -16,60 +18,66 @@
         </video>
     </div>
     <div id="body-container">
-        
-        <!-- <section id="header">
-            <button id="about-btn">about</button>
-            <button id="music-btn">music</button>
-            <button id="art-btn">art</button>
-            <button id="shop-btn">shop</button>
-            <button id="contact-btn">contact</button>
-        </section> -->
         <section id="content-holder">
             <div class="content-container" id="about-section">
-                <section id="logo">
-                    <h2>p l e b b e r</h2>
-                </section>
-                <div id="mainpage-link-grid">
+                
+                <div class="mainpage-img">
+                <img src="./images/cover-image.png" >
+                 <div id="logo">Plebber</div>
+                </div>
+                    <audio name ="pod" controls src="./music/plebber pod.mp3" id="mainpage-audio"></audio>   
+                <div class="social-links">
+                    <a href="https://www.instagram.com/maltemrkeberg/" class="fa fa-instagram" target="_blank"></a>
+                    <a href="https://soundcloud.com/plebber-techno" class="fa fa-soundcloud" target="_blank"></a>
+                    <a href="https://open.spotify.com/artist/4axWGRILVpo4WvQp5hf5tz" class="fa fa-spotify" target="_blank"></a>
+                    <a href="https://tidal.com/browse/artist/20064367" class="fa fa-music" target="_blank"></a>
+                    <a href="https://www.facebook.com/PlebberFace" class="fa fa-facebook" target="_blank"></a>
+                </div>
+                <hr>
+                <h2> bio </h2>
+                <div class="mainpage-text">
+                    <p>
+                        
+                        Plebber is a techno artist from Copenhagen who has been making an
+                        impression in the city's electronic music scene with his unique
+                        sound and engaging live performances. His productions are
+                        characterized by their intricate drumwork, modified vocal chops and
+                        hypnotic melodies, inspired by the european scenes such as Berlin,
+                        Vienna and the local Copenhagen scene. Plebber's live performances
+                        are known for their intense energy, fast rhythms and changes in
+                        genre.
+                        <br />
+                    </p>
+                    
+                </div>    
+                <hr>
+                <h3>podcasts</h3>
+                <div class="mainpage-link-grid">
+                    <iframe class="mainpage-link" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1265273599&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                    <iframe class="mainpage-link" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1081276255&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                    <iframe class="mainpage-link" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/982303411&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                </div>
+                <hr>
+                <h3>releases</h3>
+                <div class="mainpage-link-grid">
                     <iframe class="mainpage-link" src="https://www.youtube.com/embed/Q5l_O3OBbJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  web-share" allowfullscreen></iframe>
                     <iframe class="mainpage-link" src="https://www.youtube.com/embed/7shsYNiZfbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1265273599&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/fZw8SMDAwUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1081276255&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                    <iframe class="mainpage-link" src="https://www.youtube.com/embed/fZw8SMDAwUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
-                <div id="mainpage_text">
-                    <p class="mainpage-text">
-                      Plebber is a techno artist from Copenhagen who has been making an
-                      impression in the city's electronic music scene with his unique
-                      sound and engaging live performances. His productions are
-                      characterized by their intricate drumwork, modified vocal chops and
-                      hypnotic melodies, inspired by the european scenes such as Berlin,
-                      Vienna and the local Copenhagen scene. Plebber's live performances
-                      are known for their intense energy, fast rhythms and changes in
-                      genre.
-                      <br />
-                      <br />
-                      inst: <a href="https://www.instagram.com/maltemrkeberg/" target="_blank">@maltemrkeberg</a><br />
-                      contact: plebber.music(at)gmail.com<br />
-                      <br />
-                      07.01.2023 - Euphoria Launch Copenhagen<br />
-                      24.07.2021 - dasWerk Vienna<br />
-                      04.07.2021 - Klangangriff Podcast<br />
-                      26.06.2021 - Black Market w @ThiesMusic<br />
+                <hr>
+                <h2> shows </h2>
+                <div class="mainpage-text">
+                    <p>
+                        
+                        07.01.2023 - Euphoria Launch Copenhagen<br />
+                        24.07.2021 - dasWerk Vienna<br />
+                        04.07.2021 - Klangangriff Podcast<br />
+                        26.06.2021 - Black Market w @ThiesMusic<br />
                     </p>
-                  </div>
+                </div>
             </div>
-            <div class="content-container hidden" id="music-section">
-                <h1>#music</h1>
-            </div>
-            <div class="content-container hidden" id="art-section">
-                <h1>#art</h1>
-            </div>
-            <div class="content-container hidden" id="shop-section">
-                <h1>#shop</h1>
-            </div>
-            <div class="content-container hidden" id="contact-section">
-                <h1>#contact</h1>
-            </div>
+            
+            <p id="footer">&copy; plebber | 2023</p>
         </section>
     </div>
     <script src="app.js"></script>

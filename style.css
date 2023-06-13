@@ -1,14 +1,22 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arvo', serif;
     background-color: rgba(0, 0, 0, 0.346);
     color: white;
 }
 
 #logo {
-    margin: 0px auto 0;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    letter-spacing: 10px;
+    position: absolute;
+    font-size: 3em;
     text-align: center;
-    font-size:2em;
+    margin-top: 1.2em;
+    margin-left: 2em;
+    margin-bottom: 20px;
     text-shadow:black;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.443);
 }
 
 #body-container {
@@ -18,10 +26,12 @@ body {
     min-height: 50em;
     margin: 0px auto 0;
     padding: 10px;
-    background-color: black;
+    background-color: rgb(32, 32, 32);
 }
 
 #header {
+    
+    font-family: 'Arvo', serif;
     display: grid;
     height: 4em;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -54,14 +64,49 @@ body {
     display: none;
 }
 
-#mainpage-link-grid {
+.mainpage-img {
+    z-index: 0;
+    display: grid;
+    width: 65em;
+    height: 10em;
+    overflow: hidden;
+    object-fit: cover;
+    margin: 0 auto 0;
+    margin-top: 20px;
+}
+
+.mainpage-img img {
+    z-index: 0;
+    width: 65em;
+    height: 10em;
+    object-fit: cover;
+    filter: hue-rotate(90deg);
+}
+
+.mainpage-link-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
 }
 
+#mainpage-audio {
+    padding-top: 20px;
+    display: grid;
+    width: 65em;
+    margin: 20px auto 0;
+    align-self: center;
+    margin-top: 0;
+}
 
-#mainpage-link-grid * {
+.audio-title {
+    font-family: 'Arvo', serif;
+    text-align: center;
+    margin: 10px auto 10px;
+    font-size: 2em;
+    letter-spacing: 0.5em;
+}
+
+.mainpage-link-grid * {
     display: grid;
     justify-items: center;
     align-items: center;
@@ -73,13 +118,11 @@ body {
     border: 1px solid green;
   }
 
-#mainpage_text {
+.mainpage-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-top: 0px;
     align-items: auto;
-    margin: 20px 20px 20px 20px;
-    
-    text-align: justify;
-
+    margin: 20px;
   }
   
   #background-video {
@@ -105,3 +148,62 @@ h1 {
     margin-top: 0px;
     text-align: center;
 }
+
+h3, h2 {
+    margin-left: 20px;
+}
+
+hr {
+    margin-top: 30px;
+    height: 1px;
+    border: none;
+    background-color: green;
+}
+
+.social-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 50em;
+    margin: 0 auto 0;
+    padding: 0;
+    align-items: center;
+    align-content: center;
+    scale: 1.2;
+    margin-top: 20px;
+}
+
+.social-links * {
+    margin: 0 auto 0;
+}
+
+ /* Style all font awesome icons */
+ .fa {
+    padding: 20px;
+    font-size: 60px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    background: none;
+    color: white;
+    
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    background-color:rgb(62, 62, 62);
+    opacity: 0.7;
+  }
+
+  #footer {
+    text-align: center;
+    color:rgb(201, 201, 201);
+  }
+
+  /* audio visualizer */
+
+  #canvas {
+    left: 0;
+    top: 0;
+    width: 60em;
+    height: 10em;
+  }
